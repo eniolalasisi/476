@@ -6,13 +6,11 @@ urllib.urlopen("https://s3.amazonaws.com/tcmg412-fall2016/http_access_log", "htt
 
 #LOCAL_FILE = 'http_access_log.bak'
 
-#print("\n\nDownloading log file from URI... ")
+#print("\n\nDownloading log file... ")
 #response = urllib.urlopen("https://s3.amazonaws.com/tcmg412-fall2016/http_access_log", "http_access_log")
 #with open(LOCAL_FILE, "wb") as local:
 #	local.write(response.read())
-#print("File retrieved and saved to disk ({}) \n\n".format(LOCAL_FILE))
-
-
+#print("File retrieved and saved to disk)
 
 
 import urllib2
