@@ -3,7 +3,7 @@ urllib.urlopen("https://s3.amazonaws.com/tcmg412-fall2016/http_access_log", "htt
 
 #localfile = 'http_access_log.bak'
 
-#print("\n\nDownloading log file... ")
+#print("Downloading log file... ")
 #response = urllib.urlopen("https://s3.amazonaws.com/tcmg412-fall2016/http_access_log", "http_access_log")
 #with open(localfile, "wb") as local:
 #	local.write(response.read())
