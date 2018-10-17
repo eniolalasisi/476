@@ -1,14 +1,11 @@
 import urllib
 urllib.urlopen("https://s3.amazonaws.com/tcmg412-fall2016/http_access_log", "http_access_log")
 
-
-
-
-#LOCAL_FILE = 'http_access_log.bak'
+#localfile = 'http_access_log.bak'
 
 #print("\n\nDownloading log file... ")
 #response = urllib.urlopen("https://s3.amazonaws.com/tcmg412-fall2016/http_access_log", "http_access_log")
-#with open(LOCAL_FILE, "wb") as local:
+#with open(localfile, "wb") as local:
 #	local.write(response.read())
 #print("File retrieved and saved to disk)
 
@@ -241,8 +238,7 @@ for key in reqFileList:
 	else:
 		if key in reqCount:
 			reqCount[key] += 1
-
-
+			
 mostRequested = max(reqCount.items(), key=operator.itemgetter(1))[0]
 leastRequested = min(reqCount.items(), key=operator.itemgetter(1))[0]
 
